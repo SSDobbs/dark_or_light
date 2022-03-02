@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>STAR WARS</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div>
+    <img src="/img/star.svg" alt="Star" class="star">
+    <img src="/img/wars.svg" alt="Wars" class="wars">
+  </div>
+  <h1>Now you must choose.</h1>
+  <h2>Will it be the LIGHT SIDE or will it be the DARK SIDE?</h2>
+
+  <div class="choiceCard">
+    <div id="lightCard">
+      <h1 id="light"> The Path of the Jedi.</h1>
+      <button id="light" onclick="window.open('light.html', '_self')">Enter</button>
+    </div>
+    <div id="darkCard">
+      <h1 id="dark"> The Path of the Sith</h1>
+      <button id="dark" onclick="window.open('dark.html', '_self')">Enter</button>
+    </div>
+  </div>
+
+
+  <!--testing SWAPI API-->
+  <div>
+    <h1 id="list">Star Wars Characters</h1>
+    <button>CHARACTERS</button>
+    <ul id="characters">
+      <!--The JavaScript will load items here-->
+    </ul>
+    <h1 id="list">Star Wars Planets</h1>
+    <ul id="planets">
+      <!--The JavaScript will load items here-->
+    </ul>
+    <h1 id="list">Star Wars Vehicles</h1>
+    <ul id="vehicles"> 
+      <!--The JavaScript will load items here-->
+    </ul>
+  </div>
+  <script src="./star-wars-scripts.js" type="module"></script>
+
+</body>
+
+</html>

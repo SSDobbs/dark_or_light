@@ -1,0 +1,30 @@
+body {
+    background-image: url(img/galaxybg.jpg);
+    color: white;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+.lightCard {
+    border: 2px;
+    border: white;
+    border-radius: 15%;
+}
+
+#light {
+    color: rgb(11, 232, 18)
+}
+
+#dark {
+    color: red;
+}
+
+button {
+    background: black;
+    border-radius: 20%;
+    color: white;
+}
