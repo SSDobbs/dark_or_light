@@ -10,12 +10,22 @@
 </head>
 
 <body>
+  <script src="./index.js" type="module"></script>
   <div>
-    <img src="/img/star.svg" alt="Star" class="star">
-    <img src="/img/wars.svg" alt="Wars" class="wars">
+    <img src="/img/star.svg" alt="Star" class="star" height=150px>
+    <img src="/img/wars.svg" alt="Wars" class="wars" height=150px>
   </div>
+  <br>
+<div>
+  <h1>National Star Wars Day</h1>
+  <h2>May The 4th Be With You!</h2>
+    <p id="swday"></p>
+</div>
+
+  <!--
   <h1>Now you must choose.</h1>
   <h2>Will it be the LIGHT SIDE or will it be the DARK SIDE?</h2>
+
 
   <div class="choiceCard">
     <div id="lightCard">
@@ -26,26 +36,22 @@
       <h1 id="dark"> The Path of the Sith</h1>
       <button id="dark" onclick="window.open('dark.html', '_self')">Enter</button>
     </div>
-  </div>
+  </div> 
+-->
 
 
   <!--testing SWAPI API-->
   <div>
+
     <h1 id="list">Star Wars Characters</h1>
-    <button>CHARACTERS</button>
-    <ul id="characters">
-      <!--The JavaScript will load items here-->
-    </ul>
+    <img src="img/characters.jpg" height=220px onclick="window.open('characters.html')">
+
     <h1 id="list">Star Wars Planets</h1>
-    <ul id="planets">
-      <!--The JavaScript will load items here-->
-    </ul>
+    <img src="img/planets.jpg" height=220px onclick="window.open('planets.html')">
+
+    
     <h1 id="list">Star Wars Vehicles</h1>
-    <ul id="vehicles"> 
-      <!--The JavaScript will load items here-->
-    </ul>
-  </div>
-  <script src="./star-wars-scripts.js" type="module"></script>
+    <img src="img/vehicles.png" height=220px onclick="window.open('vehicles.html')">
 
 </body>
 

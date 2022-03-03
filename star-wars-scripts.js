@@ -1,9 +1,11 @@
-//character list//
+
+
+//character list
 let starWarsPeopleList = document.querySelector('#characters');
 
 fetch('https://swapi.dev/api/people')
-.then(function(response) {   
-  return response.json(); 
+.then(function(res) {   
+  return res.json(); 
 })
 .then(function(json) {
   let people = json.results; 
@@ -16,7 +18,8 @@ fetch('https://swapi.dev/api/people')
   }
 });
 
-//planet list//
+
+//planet list
 let starWarsPlanetList = document.querySelector('#planets');
 
 fetch('https://swapi.dev/api/planets') 
@@ -34,7 +37,8 @@ fetch('https://swapi.dev/api/planets')
   }
 });
 
-//vehicle list//
+
+//vehicle list
 let starWarsVehicleList = document.querySelector('#vehicles');
 
 fetch('https://swapi.dev/api/vehicles/') 
@@ -51,3 +55,7 @@ fetch('https://swapi.dev/api/vehicles/')
     starWarsVehicleList.appendChild(listItem);  
   }
 });
+
+
+
+
