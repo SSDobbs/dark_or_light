@@ -5,6 +5,15 @@ body {
     padding-top: 30px;
 }
 
+#star {
+    width: 45px;
+    height: 40x;
+}
+
+#wars {
+    width: 50px;
+}
+
 ul {
     list-style: none;
 }
@@ -29,9 +38,24 @@ button {
     background: black;
     border-radius: 20%;
     color: white;
+    margin: 15px;
 }
 
-#swday{
+img {
+    margin: 15px;
+}
+
+#swday,
+#fan {
     font-size: 30px;
-    color:blue
+    color: rgb(215, 215, 26)
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+
 }

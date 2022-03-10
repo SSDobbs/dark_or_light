@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>STAR WARS</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable = no">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="shortcut icon" href="/PATH_TO_STATIC_FAVICON/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <script src="/script/index.js" type="module"></script>
+  <div>
+    <img src="/img/star.svg" alt="Star" class="star">
+    <img src="/img/wars.svg" alt="Wars" class="wars">
+  </div>
+  <div>
+    <h1>National Star Wars Day</h1>
+    <h2>May The 4th Be With You!</h2>
+    <p id="swday"></p>
+  </div>
+
+  <!--
+  <h1>Now you must choose.</h1>
+  <h2>Will it be the LIGHT SIDE or will it be the DARK SIDE?</h2>
+
+  <div class="choiceCard">
+    <div id="lightCard">
+      <h1 id="light"> The Path of the Jedi.</h1>
+      <button id="light" onclick="window.open('light.html', '_self')">Enter</button>
+    </div>
+    <div id="darkCard">
+      <h1 id="dark"> The Path of the Sith</h1>
+      <button id="dark" onclick="window.open('dark.html', '_self')">Enter</button>
+    </div>
+  </div> 
+-->
+
+  <div>
+    <button onclick="window.open('/pages/characters.html', '_self')">
+      <h1>Star Wars Characters</h1>
+    </button>
+    <!--img src="/img/characters.jpg" height=220px -->
+    <br>
+    <button onclick="window.open('/pages/planets.html', '_self')">
+      <h1>Star Wars Planets</h1>
+    </button>
+    <!--img src="/img/planets.jpg" height=220px-->
+    <br>
+    <button onclick="window.open('/pages/vehicles.html', '_self')">
+      <h1>Star Wars Vehicles</h1>
+    </button>
+    <!--img src="/img/vehicles.png" height=220px -->
+
+</body>
+<footer>
+  <img src="/img/choose.jpg" width=50px onclick="window.open('/pages/fanArt.html', '_self')">
+</footer>
+
+</html>
