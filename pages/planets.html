@@ -15,6 +15,7 @@
         <img src="/img/star.svg" alt="Star" class="star">
         <img src="/img/wars.svg" alt="Wars" class="wars">
     </div>
+    <!--img src="/img/map.jpg" width=400px height=550px-->
     <h1 id="list">Star Wars Planets</h1>
     <p id="planets">
       <!--The JavaScript will load items here-->
@@ -32,7 +33,7 @@ fetch('https://swapi.dev/api/planets')
     let p = people;
 
     for (p of people) {
-      let listItem = document.createElement('li');
+      let listItem = document.createElement('p');
       listItem.innerHTML = '<p>' + p.name + '</p>';
       starWarsPlanetList.appendChild(listItem);
     }

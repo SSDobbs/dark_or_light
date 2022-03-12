@@ -13,16 +13,30 @@
 
 <body>
   <script src="/script/index.js" type="module"></script>
-  <div>
-    <img src="/img/star.svg" alt="Star" class="star">
-    <img src="/img/wars.svg" alt="Wars" class="wars">
-  </div>
-  <div>
-    <h1>National Star Wars Day</h1>
-    <h2>May The 4th Be With You!</h2>
-    <p id="swday"></p>
-  </div>
+  <script src="/mychart.js" type="module"></script>
 
+  <div class="fade"></div>
+  <section class="star-wars">
+
+    <div class="crawl">
+      <div class="title">
+        <img src="/img/star.svg" alt="Star" class="star">
+        <img src="/img/wars.svg" alt="Wars" class="wars">
+      </div>
+
+      <h1>National Star Wars Day</h1>
+      <h2>May The 4th Be With You!</h2>
+      <h2 id="swday"></h2>
+
+      <p>
+        In a galaxy, very close to this one...in fact it is this galaxy
+        and this planet called Earth. A student is preparing a project
+        to submit for the final in the second part of Code Kentucky Web
+        Development.
+
+      </p>
+    </div>
+  </section>
   <!--
   <h1>Now you must choose.</h1>
   <h2>Will it be the LIGHT SIDE or will it be the DARK SIDE?</h2>
@@ -40,6 +54,10 @@
 -->
 
   <div>
+    <button onclick="window.open('/pages/movies.html', '_self')">
+      <h1>Star Wars Movies</h1>
+    </button>
+    <br>
     <button onclick="window.open('/pages/characters.html', '_self')">
       <h1>Star Wars Characters</h1>
     </button>
@@ -55,9 +73,13 @@
     </button>
     <!--img src="/img/vehicles.png" height=220px -->
 
+    <br>
+
+    <!--canvas id="myChart" width="500" height="500"></canvas-->
 </body>
 <footer>
   <img src="/img/choose.jpg" width=50px onclick="window.open('/pages/fanArt.html', '_self')">
+  <h6>Star Wars is a trademark and copyright of Lucasfilm and Disney.</h6>
 </footer>
 
 </html>

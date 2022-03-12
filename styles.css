@@ -1,13 +1,52 @@
 body {
     background-image: url(img/galaxybg.jpg);
     color: white;
+    padding: 30px;
+   
     text-align: center;
-    padding-top: 30px;
+}
+/*.star-wars{
+    display: flex;
+    height: 800px;
+    perspective: 400px;
+    font-size: 500%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    text-align: center;
+}
+.crawl{
+    position:relative;
+    top:-100px;
+    transform-origin: 50% 100%;
+    animation: crawl 45s linear;
+}
+@keyframes crawl{
+    0%{
+        top: 0;
+        transform: rotateX(20deg) translateZ(0);
+    }
+    100%{
+        top:-6000px;
+        transform: rotateX(25deg) translateZ(-2500px);
+    }
+}
+.fade {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    top: -25px;
+    background-image: linear-gradient(0deg, transparent, black 75%);
+    z-index: 1;
+  }*/
+
+h1,
+h2{
+    text-shadow: 1px 1px #EBD71C;
 }
 
 #star {
-    width: 45px;
-    height: 40x;
+    width: 50px;
 }
 
 #wars {
@@ -15,7 +54,7 @@ body {
 }
 
 ul {
-    list-style: none;
+    text-align: left;
 }
 
 .lightCard {
@@ -37,18 +76,27 @@ ul {
 button {
     background: black;
     border-radius: 20%;
-    color: white;
+    color: white;;
     margin: 15px;
+    border-color: #EBD71C;;
 }
 
 img {
     margin: 15px;
 }
 
+#movies > p >img {
+    height: 400px;
+    width: auto;
+}
+
 #swday,
 #fan {
     font-size: 30px;
-    color: rgb(215, 215, 26)
+    color: #EBD71C;
+}
+canvas{
+    background-color: #EBD71C;
 }
 
 @media only screen and (max-width: 767px) {
