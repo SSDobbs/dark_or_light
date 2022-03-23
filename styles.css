@@ -46,7 +46,11 @@ button {
     margin: 15px;
     border-color: #EBD71C;;
 }
-
+#nav{
+    text-decoration: none;
+    color: white;
+    border: 1px; 
+}
 img {
     margin: 15px;
 }
