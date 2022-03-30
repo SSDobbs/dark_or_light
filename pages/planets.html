@@ -2,42 +2,46 @@
 <html>
 
 <head>
-    <title>STAR WARS</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable = no">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+  <title>STAR WARS</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable = no">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-  <button onclick="window.open('./index.html', '_self')">HOME</button>
+  <button onclick="window.open('/index.html', '_self')">HOME</button>
   <div>
-        <img src="../img/star.svg" alt="Star" class="star">
-        <img src="../img/wars.svg" alt="Wars" class="wars">
-    </div>
-    <!--img src="/img/map.jpg" width=400px height=550px-->
+    <img src="../img/star.svg" alt="Star" class="star">
+    <img src="../img/wars.svg" alt="Wars" class="wars">
+  </div>
+
+  <!--img src="/img/map.jpg" width=400px height=550px-->
+  <div>
     <h1 id="list">Star Wars Planets</h1>
     <p id="planets">
       <!--The JavaScript will load items here-->
     </p>
+  </div>
 
-<script>
+  <script>
     let starWarsPlanetList = document.querySelector('#planets');
 
-fetch('https://swapi.dev/api/planets')
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (json) {
-    let people = json.results;
-    let p = people;
+    fetch('https://swapi.dev/api/planets')
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (json) {
+        let people = json.results;
+        let p = people;
 
-    for (p of people) {
-      let listItem = document.createElement('p');
-      listItem.innerHTML = '<p>' + p.name + '</p>';
-      starWarsPlanetList.appendChild(listItem);
-    }
-  });
-</script>
+        for (p of people) {
+          let listItem = document.createElement('p');
+          listItem.innerHTML = '<p>' + p.name + '</p>';
+          starWarsPlanetList.appendChild(listItem);
+        }
+      });
+  </script>
+
 </body>

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <button onclick="window.open('./index.html', '_self')">HOME</button>
+    <button onclick="window.open('/index.html', '_self')">HOME</button>
     <div>
         <img src="../img/star.svg" alt="Star" class="star">
         <img src="../img/wars.svg" alt="Wars" class="wars">
@@ -22,6 +22,12 @@
             <!--The JavaScript will load items here-->
         </p>
     </div>
+    <div id="moveable">
+        <img src="../img/AT-AT_Fathead.svg" alt="AT-AT" height=335px>
+        <img src="../img/deathstar.png" alt="Death Star" height=335px>
+        <img src="../img/millenniumfalcon.png" alt="Millennium Falcon" height=335px>
+    </div>
+
 
     <script>
         let starWarsVehicleList = document.querySelector('#vehicles');
@@ -40,5 +46,47 @@
                     starWarsVehicleList.appendChild(listItem);
                 }
             });
+
+        //Make the DIV element draggagle:
+        dragElement(document.getElementById("moveable"));
+
+        function dragElement(element) {
+            var pos1 = 0,
+                pos2 = 0,
+                pos3 = 0,
+                pos4 = 0;
+            if (document.getElementById(element.id + "header")) {
+                /* if present, the header is where you move the DIV from:*/
+                document.getElementById(element.id + "header").onmousedown = dragMouseDown;
+            } else {
+                /* otherwise, move the DIV from anywhere inside the DIV:*/
+                element.onmousedown = dragMouseDown;
+            }
+
+            function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                document.onmousemove = elementDrag;
+            }
+
+            function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                element.style.top = (element.offsetTop - pos2) + "px";
+                element.style.left = (element.offsetLeft - pos1) + "px";
+            }
+            /* stop moving when mouse button is released:*/
+            function closeDragElement() {
+                document.onmouseup = null;
+                document.onmousemove = null;
+            }
+        }
     </script>
 </body>

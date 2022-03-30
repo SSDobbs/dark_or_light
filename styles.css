@@ -2,7 +2,6 @@ body {
     background-image: url(img/galaxybg.jpg);
     color: white;
     padding: 30px;
-   
     text-align: center;
 }
 
@@ -68,4 +67,6 @@ img {
 canvas{
     background-color: #EBD71C;
 }
-
+#moveable{
+    position: absolute;
+}

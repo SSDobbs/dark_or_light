@@ -11,30 +11,29 @@
 </head>
 
 <body>
-    <button onclick="window.open('./index.html', '_self')">HOME</button>
+    <button onclick="window.open('/index.html', '_self')">HOME</button>
     <script>
-             fetch('../movies.json')
-                .then((response) => {
-                    return response.json()
-                })
-                .then((res) => {
-                    let moviesList = document.querySelector('#movie');
-                    for (let i = 0; i < res.movies.length; i++) {
-                        let movie = document.createElement('p');
-                        movie.innerHTML = `<h3>${res.movies[ i ].title}</h3>`;
-                        movie.innerHTML = `<img src= ${res.movies [i].poster}>`;
-                        movie.innerHTML += `<p> Episode ${res.movies[ i ].episode_number}</p>`;
-                        movie.innerHTML += `<p> ${res.movies[ i ].description}</p>`;
-                        let castList = '<ul>';
-                        res.movies[i].main_characters.forEach((character) => {
-                            castList += `<li>${character}</li>`;
-                        })
-                        castList += '</ul>'
-                        movie.innerHTML += ` Cast: ${castList} <br>`;
-                        movies.appendChild(movie);
-                    }
-                })
-        
+        fetch('../movies.json')
+            .then((response) => {
+                return response.json()
+            })
+            .then((res) => {
+                let moviesList = document.querySelector('#movie');
+                for (let i = 0; i < res.movies.length; i++) {
+                    let movie = document.createElement('p');
+                    movie.innerHTML = `<h3>${res.movies[ i ].title}</h3>`;
+                    movie.innerHTML = `<img src= ${res.movies [i].poster}>`;
+                    movie.innerHTML += `<p> Episode ${res.movies[ i ].episode_number}</p>`;
+                    movie.innerHTML += `<p> ${res.movies[ i ].description}</p>`;
+                    let castList = '<ul>';
+                    res.movies[i].main_characters.forEach((character) => {
+                        castList += `<li>${character}</li>`;
+                    })
+                    castList += '</ul>'
+                    movie.innerHTML += ` Cast: ${castList} <br>`;
+                    movies.appendChild(movie);
+                }
+            })
     </script>
     <div>
         <img src="../img/star.svg" alt="Star" class="star">
@@ -49,7 +48,7 @@
 </body>
 <footer>
     <h6>
-        Star Wars movie json data supplied by https://github.com/Package/Star-Wars-Express. 
+        Star Wars movie json data supplied by https://github.com/Package/Star-Wars-Express.
         Thank You for your dedication to the Star Wars Universe.
     </h6>
 </footer>
