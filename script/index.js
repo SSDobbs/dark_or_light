@@ -10,7 +10,7 @@ document.getElementById("swday").innerHTML = (Math.ceil((swday.getTime() - today
 
 
 
-fetch('../movies.json')
+fetch('/movies.json')
     .then((response) => {
         return response.json()
     })
@@ -20,7 +20,6 @@ fetch('../movies.json')
             let movie = document.createElement('p');
             movie.innerHTML = `<img src= ${res.movies [i].poster}><br>`;
             movie.innerHTML += `<h3>${res.movies[ i ].title}</h3>`;
-            movie.innerHTML += `<button onclick= "window.open ('${res.movies[i].link}')></button><br>`;
             let castList = '<ul>';
             res.movies[i].main_characters.forEach((character) => {
                 castList += `<li>${character}</li>`;
