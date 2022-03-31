@@ -18,7 +18,7 @@ fetch('movies.json')
         let moviesList = document.querySelector('#movie');
         for (let i = 0; i < res.movies.length; i++) {
             let movie = document.createElement('p');
-            movie.innerHTML = `<img src= '../${res.movies [i].poster}'><br>`;
+            movie.innerHTML = `<img src= './${res.movies [i].poster}'><br>`;
             movie.innerHTML += `<h3>${res.movies[ i ].title}</h3>`;
             let castList = '<ul>';
             res.movies[i].main_characters.forEach((character) => {
