@@ -10,7 +10,7 @@ document.getElementById("swday").innerHTML = (Math.ceil((swday.getTime() - today
 
 
 
-fetch('/movies.json')
+fetch('./movies.json')
     .then((response) => {
         return response.json()
     })
