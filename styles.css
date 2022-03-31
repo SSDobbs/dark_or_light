@@ -1,62 +1,49 @@
 body {
     background-image: url(img/galaxybg.jpg);
     color: white;
-    padding: 30px;
     text-align: center;
+    padding-top: 20px;
+
+}
+
+#large {
+    display: none;
 }
 
 h1,
-h2{
-    text-shadow: 1px 1px #EBD71C;
-}
-
-#star {
-    width: 50px;
-}
-
-#wars {
-    width: 50px;
+h2 {
+    text-shadow: .25px .25px #EBD71C;
 }
 
 ul {
     text-align: left;
 }
 
-.lightCard {
-    border: 2px;
-    border: white;
-    border-radius: 25%;
-}
-
-#light {
-    color: rgb(11, 232, 18);
-    border-color: rgb(11, 232, 18);
-}
-
-#dark {
-    color: red;
-    border-color: red;
-}
-
 button {
     background: black;
     border-radius: 20%;
-    color: white;;
-    margin: 15px;
-    border-color: #EBD71C;;
-}
-#nav{
-    text-decoration: none;
     color: white;
-    border: 1px; 
-}
-img {
+    ;
     margin: 15px;
+    border-color: #EBD71C;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-#movies > p >img {
+#nav {
+    text-decoration: none;
+    color: white;
+    border: 1px;
+}
+
+#movies>p>img {
     height: 400px;
     width: auto;
+}
+
+#movies>p {
+    margin-right: 30px;
+
 }
 
 #swday,
@@ -64,9 +51,50 @@ img {
     font-size: 30px;
     color: #EBD71C;
 }
-canvas{
-    background-color: #EBD71C;
-}
-#moveable{
+
+#moveable {
     position: absolute;
+}
+
+
+@media screen and (min-width: 1100px) {
+    .mainbuttons {
+        display: none;
+    }
+
+    #large {
+        display: initial;
+    }
+
+    #movies {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #show {
+        text-decoration: underline;
+        color: #EBD71C;
+    }
+
+    .star,
+    .wars {
+        width: 40%;
+    }
+
+    #data {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .col1,
+    .col2,
+    .col3 {
+        width: 33%;
+        color: #EBD71C;
+    }
+
 }

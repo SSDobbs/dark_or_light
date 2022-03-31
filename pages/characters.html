@@ -31,7 +31,6 @@
       .then(function (json) {
         let people = json.results;
         let p = people;
-
         for (p of people) {
           let listItem = document.createElement('p');
           listItem.innerHTML = '<p>' + p.name + '</p>';

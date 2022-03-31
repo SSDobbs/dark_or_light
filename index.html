@@ -28,7 +28,7 @@
     </div>
   </section>
 
-  <div>
+  <div class="mainbuttons">
     <button onclick="window.open('./pages/movies.html', '_self')">
       <h1>Star Wars Movies</h1>
     </button>
@@ -36,23 +36,32 @@
     <button onclick="window.open('./pages/characters.html', '_self')">
       <h1>Star Wars Characters</h1>
     </button>
-    <!--img src="/img/characters.jpg" height=220px -->
     <br>
     <button onclick="window.open('./pages/planets.html', '_self')">
       <h1>Star Wars Planets</h1>
     </button>
-    <!--img src="/img/planets.jpg" height=220px-->
     <br>
     <button onclick="window.open('./pages/vehicles.html', '_self')">
       <h1>Star Wars Vehicles</h1>
     </button>
-    <!--img src="/img/vehicles.png" height=220px -->
+  </div>
 
-    <br>
+  <div id="large">
+    <div>
+      <ul id="movies"></ul>
+    </div>
+    <hr>
+    <div id="data">
+      <p class="col1" id="characters">CHARACTERS:</p>
+      <p class="col2" id="planets">PLANETS:</p>
+      <p class="col3" id="vehicles">VEHICLES:</p>
+    </div>
+    <hr>
 
+    <img src="img/swtimeline.png" alt="Star Wars Timeline" width=90%>
+  </div>
 </body>
 <footer>
-  <!--img src="./img/choose.jpg" width=50px onclick="window.open('./pages/fanArt.html', '_self')"-->
   <h6>Star Wars is a trademark and copyright of Lucasfilm and Disney.</h6>
 </footer>
 

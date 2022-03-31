@@ -22,7 +22,7 @@
                 for (let i = 0; i < res.movies.length; i++) {
                     let movie = document.createElement('p');
                     movie.innerHTML = `<h3>${res.movies[ i ].title}</h3>`;
-                    movie.innerHTML = `<img src= ${res.movies [i].poster}>`;
+                    movie.innerHTML += `<img src= ${res.movies [i].poster}>`;
                     movie.innerHTML += `<p> Episode ${res.movies[ i ].episode_number}</p>`;
                     movie.innerHTML += `<p> ${res.movies[ i ].description}</p>`;
                     let castList = '<ul>';
