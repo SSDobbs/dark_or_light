@@ -12,7 +12,7 @@ body {
 
 h1,
 h2 {
-    text-shadow: .25px .25px #EBD71C;
+    text-shadow: .25px .25px #fdf253;
 }
 
 ul {
@@ -25,7 +25,7 @@ button {
     color: white;
     ;
     margin: 15px;
-    border-color: #EBD71C;
+    border-color: #fdf253;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -49,14 +49,15 @@ button {
 #swday,
 #fan {
     font-size: 30px;
-    color: #EBD71C;
+    color: #fdf253;
 }
 
 #moveable {
     position: absolute;
 }
-
-
+hr{
+    color: #fdf253;
+}
 @media screen and (min-width: 1100px) {
     .mainbuttons {
         display: none;
@@ -75,7 +76,7 @@ button {
 
     #show {
         text-decoration: underline;
-        color: #EBD71C;
+        color: #fdf253;
     }
 
     .star,
@@ -94,7 +95,7 @@ button {
     .col2,
     .col3 {
         width: 33%;
-        color: #EBD71C;
+        color: #fdf253;
     }
 
 }
